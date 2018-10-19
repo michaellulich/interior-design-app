@@ -13,11 +13,12 @@ import { WebBrowser } from "expo";
 import { MonoText } from "../components/StyledText";
 // import Camera from "react-native-camera";
 import TakePicture from "../components/TakePicture";
+<<<<<<< HEAD
+=======
 import ChrisButton from "../components/ChrisButton";
 
+>>>>>>> 27c9b60c17401459bf754f51dfa0689768fcfff4
 import Vish from "../components/Vish";
-
-import TestComponent from "../components/TestComponent";
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -104,8 +105,11 @@ export default class HomeScreen extends React.Component {
       */
       <View style={styles.container}>
         <TakePicture onTakePicture={this.getTakePictureHandler} />
+<<<<<<< HEAD
+=======
         <ChrisButton name={this.state.name} onPress={this.changeName} />
         <TestComponent />
+>>>>>>> 27c9b60c17401459bf754f51dfa0689768fcfff4
         <Vish />
       </View>
     );
