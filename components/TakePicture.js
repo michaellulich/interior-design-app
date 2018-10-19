@@ -1,8 +1,10 @@
 import React from "react";
-import { Button } from "react-native";
+import { Button, Alert } from "react-native";
 
 const takePicture = props => {
-  return <Button title="Take Picture" onPress={props.onTakePicture} />;
+  return <Button title="Take Picture" onPress={() => {
+    Alert.alert('Fuck You');
+  }} />;
 };
 
 export default takePicture;
