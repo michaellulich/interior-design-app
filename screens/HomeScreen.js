@@ -13,7 +13,10 @@ import { WebBrowser } from "expo";
 import { MonoText } from "../components/StyledText";
 // import Camera from "react-native-camera";
 import TakePicture from "../components/TakePicture";
+
 import Vish from "../components/Vish";
+
+import TestComponent from "../components/TestComponent";
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -88,6 +91,7 @@ export default class HomeScreen extends React.Component {
       */
       <View style={styles.container}>
         <TakePicture onTakePicture={this.getTakePictureHandler} />
+        <TestComponent />
         <Vish />
       </View>
     );
