@@ -14,6 +14,8 @@ import { MonoText } from "../components/StyledText";
 // import Camera from "react-native-camera";
 import TakePicture from "../components/TakePicture";
 
+import TestComponent from "../components/TestComponent";
+
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null
@@ -87,6 +89,7 @@ export default class HomeScreen extends React.Component {
       */
       <View style={styles.container}>
         <TakePicture onTakePicture={this.getTakePictureHandler} />
+        <TestComponent/>
       </View>
     );
   }
