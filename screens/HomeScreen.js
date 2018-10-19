@@ -13,6 +13,7 @@ import { WebBrowser } from "expo";
 import { MonoText } from "../components/StyledText";
 // import Camera from "react-native-camera";
 import TakePicture from "../components/TakePicture";
+import ChrisButton from "../components/ChrisButton";
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -20,6 +21,18 @@ export default class HomeScreen extends React.Component {
   };
   getTakePictureHandler = () => {
     console.log("Took a picture");
+  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Chris"
+    };
+  }
+
+  changeName = () => {
+    this.setState({
+      name: this.state.name + " Is Crazzy!!!!!!"
+    });
   };
 
   render() {
@@ -87,6 +100,7 @@ export default class HomeScreen extends React.Component {
       */
       <View style={styles.container}>
         <TakePicture onTakePicture={this.getTakePictureHandler} />
+        <ChrisButton name={this.state.name} onPress={this.changeName} />
       </View>
     );
   }
